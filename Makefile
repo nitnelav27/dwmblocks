@@ -10,3 +10,7 @@ install: output
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/dwmblocks
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/dwmblocks
+git:
+	git add --all
+	git commit -m "$m"
+	git push dwmblocks master
